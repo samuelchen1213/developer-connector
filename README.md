@@ -1,7 +1,7 @@
 # developer-connector
 Fullstack application (MERN Stack) - Social network app that allows developers around the world to connect
 
-## Tools and framworks used
+## Tools, framworks, and dependencies used
 - React Js
 - Express Js
 - Node Js
@@ -9,3 +9,4 @@ Fullstack application (MERN Stack) - Social network app that allows developers a
 - Postman 
 - JSON Web Tokens
 - Passport Js
+- Validator Js
