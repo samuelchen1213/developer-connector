@@ -16,8 +16,7 @@ const UserSchema = new Schema ({
         required: true
     },
     avatar: {
-        type: String,
-        required: true
+        type: String
     },
     date: {
         type: Date,
@@ -26,4 +25,4 @@ const UserSchema = new Schema ({
 });
 
 // First parameter (name chosen), second parameter (name made in Schema)
-module.exports = User = mongoose.modal(Users, UserSchema);
+module.exports = User = mongoose.model('users', UserSchema);
