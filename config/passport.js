@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const User = mongoose.model('users');
 const keys = require('../config/keys');
 
-const opts = {};
+const opts = {}; // Options
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = keys.secretOrKey;
 
@@ -16,7 +16,6 @@ module.exports = (passport) => {
                 if (user) {
                     return done(null, user);
                 }
-
                 // Did not find user
                 return done(null, false);
             })
