@@ -7,3 +7,5 @@ Fullstack application (MERN Stack) - Social network app that allows developers a
 - Node Js
 - MongoDB
 - Postman 
+- JSON Web Tokens
+- Passport Js
