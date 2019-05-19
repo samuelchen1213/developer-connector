@@ -19,7 +19,7 @@ router.get('/test', (req, res) => res.json({ msg: "Profile Works!" }));
 router.get('/', passport.authenticate('jwt', {session: false}), (req, res) => {
     const errors = {};
     Profile.findOne({ user: req.user.id })
-    .then( rofile => {
+    .then( profile => {
         if (!profile) {
             errors.noprofile = 'Uh oh! We cant find this user!'
             return res.status(404).json(errors);
