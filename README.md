@@ -11,3 +11,4 @@ Fullstack application (MERN Stack) - Social network app that allows developers a
 - MongoDB
 - React Js
 - Redux
+- Bootstap 4
