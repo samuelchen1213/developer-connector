@@ -6,11 +6,7 @@ class Navbar extends Component {
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
         <div className="container">
             <a className="navbar-brand" href="landing.html">
-                {/*eslint-disable-next-line*/}
-                <span role="img">&#x1F5A5;</span> 
                     Developer Connector 
-                {/*eslint-disable-next-line*/}
-                <span role="img">&#x1F913;</span> 
             </a>
             <button
                 className="navbar-toggler"
