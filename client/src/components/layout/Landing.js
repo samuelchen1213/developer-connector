@@ -1,6 +1,5 @@
 import React, { Component } from "react"; 
-import video from '../../img/hero.mp4';
-import img from '../../img/showcase.jpg';
+import { Link } from 'react-router-dom';
 
 class Landing extends Component {
     render() {
@@ -10,12 +9,6 @@ class Landing extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12 text-center">
-                            
-                                <div className="fullscreen-bg">
-                                    <video poster={img} playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                                        <source src={video}/>
-                                    </video>
-                                </div>
                                 
                                 <h1 className="display-3 mb-4">
                                     {/*eslint-disable-next-line*/}
@@ -30,8 +23,8 @@ class Landing extends Component {
 
                                 <p className="lead"> Create a profile to showcase yourself as a developer, utlilize posts get help from other developers!</p>
                                 <hr />
-                                <a href="register.html" className="btn btn-lg btn-success mr-2">Sign Up</a>
-                                <a href="login.html" className="btn btn-lg btn-light">Login</a>
+                                <Link to="/register" className="btn btn-lg btn-success mr-2">Sign Up</Link>
+                                <Link to="/login" className="btn btn-lg btn-light">Login</Link>
                             </div>
                         </div>
                     </div>
