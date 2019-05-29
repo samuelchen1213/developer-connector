@@ -21,7 +21,7 @@ class Landing extends Component {
                                 </h1>
 
 
-                                <p className="lead"> Create a profile to showcase yourself as a developer, utlilize posts get help from other developers!</p>
+                                <p className="lead"> Showcase your skills and education as a developer, utlilize posts get help from other developers!</p>
                                 <hr />
                                 <Link to="/register" className="btn btn-lg btn-success mr-2">Sign Up</Link>
                                 <Link to="/login" className="btn btn-lg btn-light">Login</Link>
