@@ -22,16 +22,12 @@ export const loginUser = data => (dispatch) => {
         .then(res => {
             // Save to local storage
             const { token } = res.data;
-
             // Set token to local storage
             localStorage.setItem('jwtToken', token);
-
             // Set token to Auth Header
             setAuthToken(token);
-
             // Decode Token
             const decoded = jwt_decode(token);
-
             // Set current user
             dispatch(setCurrentUser(decoded));
 
@@ -50,4 +46,14 @@ export const setCurrentUser = decoded => {
         type: SET_CURRENT_USER,
         payload: decoded
     }
+}
+
+// Log out user
+export const logoutUser = () => dispatch => {
+    // Remove Token from local storage
+    localStorage.removeItem('jwtToken');
+    // Remove Auth Header
+    setAuthToken(false);
+    // Set current user to empty object ( isAuthenticated: false )
+    dispatch(setCurrentUser({}))
 }
