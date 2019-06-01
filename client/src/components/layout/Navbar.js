@@ -11,7 +11,6 @@ class Navbar extends Component {
         event.preventDefault();
         this.props.clearCurrentProfile();
         this.props.logoutUser();
-        window.location.href = '/login'
     }
 
     render() {
