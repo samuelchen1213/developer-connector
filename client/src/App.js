@@ -15,6 +15,7 @@ import Register from './components/authentication/Register';
 import Login from './components/authentication/Login';
 import Dashboard from './components/dashboard/Dashboard';
 import CreateProfile from './components/create-profile/CreateProfile';
+import EditProfile from './components/edit-profile/EditProfile';
 
 import './App.css';
 
@@ -54,6 +55,9 @@ function App() {
 						<Switch>
 							<PrivateRoute exact path="/create-profile" component={CreateProfile}/>
 						</Switch>
+						<Switch>
+							<PrivateRoute exact path="/edit-profile" component={EditProfile}/>
+						</Switch>
 					</div>
 					<Footer/>
 				</div>
@@ -63,3 +67,4 @@ function App() {
 }
 
 export default App;
+ 
