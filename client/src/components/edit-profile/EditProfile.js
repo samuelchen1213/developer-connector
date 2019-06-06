@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types'
 import { createProfile, getCurrentProfile } from '../../actions/profileActions';
 import isEmpty from '../../validation/is-empty';
+import { Link } from 'react-router-dom';
 
 import TextField from '../common/TextField';
 import TextArea from '../common/TextArea';
@@ -174,6 +175,14 @@ class EditProfile extends Component {
         <div className="create-profile">
             <div className="container">
                 <div className="row">
+                    <div className="col-md-8 ml-0 mt-1">
+                        <Link to="/dashboard" className="btn btn-light"> 
+                            {/*eslint-disable-next-line*/}
+                            <span role="img">&#x1F519;</span>
+                            {' '}
+                            Go Back
+                        </Link>
+                    </div>
                     <div className="col-md-8 m-auto">
                         
                         <h1 className="lead display-4 text-center">

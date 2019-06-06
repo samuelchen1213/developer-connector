@@ -47,13 +47,15 @@ class AddExperience extends Component {
             <div className="add-experience">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-8 m-auto">
-                             <Link to="/dashboard" className="btn btn-light"> 
+                        <div className="col-md-8 ml-0 mt-1">
+                            <Link to="/dashboard" className="btn btn-light"> 
                                 {/*eslint-disable-next-line*/}
                                 <span role="img">&#x1F519;</span>
                                 {' '}
                                 Go Back
-                             </Link>
+                            </Link>
+                        </div>
+                        <div className="col-md-8 m-auto">
                              <h1 className="display-4 text-center">
                                  Add some experience!
                              </h1>
