@@ -35,7 +35,7 @@ class AddEducation extends Component {
 
     onSubmit = (event) => {
         event.preventDefault();
-        const dataExp = {
+        const dataEdu = {
             school: this.state.school,
             degree: this.state.degree,
             fieldofstudy: this.state.fieldofstudy,
@@ -45,7 +45,7 @@ class AddEducation extends Component {
             description: this.state.description,
         }
 
-        this.props.addEducation(dataExp, this.props.history)
+        this.props.addEducation(dataEdu, this.props.history)
     }
 
     onChange = (event) => {
@@ -63,7 +63,7 @@ class AddEducation extends Component {
         const { errors } = this.state;
 
         return (
-            <div className="add-experience">
+            <div className="add-education">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 ml-0 mt-1">
@@ -76,34 +76,34 @@ class AddEducation extends Component {
                         </div>
                         <div className="col-md-8 m-auto">
                              <h1 className="display-4 text-center">
-                                 Add some experience!
+                                 Attended any schools or bootcamps?
                              </h1>
                              <p className="lead text-center">
-                                 Showcase your work experience, let them know what you're made of!
+                                 Showcase where you have been and what you learned!
                              </p>
                              <small className="d-block pb-3"> * = required fields </small>
 
                             <form onSubmit={this.onSubmit}>
                                 <TextField 
-                                    placeholder="* Company"
-                                    name="company"
-                                    value={this.state.company}
+                                    placeholder="* School"
+                                    name="school"
+                                    value={this.state.school}
                                     onChange={this.onChange}
-                                    error={errors.company}
+                                    error={errors.school}
                                 />
                                 <TextField 
-                                    placeholder="* Job Title"
-                                    name="title"
-                                    value={this.state.title}
+                                    placeholder="* Degree / Certification "
+                                    name="degree"
+                                    value={this.state.degree}
                                     onChange={this.onChange}
-                                    error={errors.title}
+                                    error={errors.degree}
                                 />
                                 <TextField 
-                                    placeholder="Location"
-                                    name="location"
-                                    value={this.state.location}
+                                    placeholder="* Field of study"
+                                    name="fieldofstudy"
+                                    value={this.state.fieldofstudy}
                                     onChange={this.onChange}
-                                    error={errors.location}
+                                    error={errors.fieldofstudy}
                                 />
                                 <h6>From Date:</h6>
                                 <TextField 
@@ -137,12 +137,12 @@ class AddEducation extends Component {
                                     </label>
                                 </div>
                                 <TextArea 
-                                    placeholder="Job description"
+                                    placeholder="Description"
                                     name="description"
                                     value={this.state.description}
                                     onChange={this.onChange}
                                     error={errors.description}
-                                    info="Give us some details of the cool things you did"
+                                    info="Give us some details of the cool stuff you learned"
                                 />
                                 <input type="submit" value="Submit" className="btn btn-primary btn-block mt-4"/>
                             </form>
