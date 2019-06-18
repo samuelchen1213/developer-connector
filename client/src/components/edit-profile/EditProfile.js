@@ -266,6 +266,7 @@ class EditProfile extends Component {
 
                             <div className="mb-3">
                                 <button 
+                                    type="button"
                                     onClick={() => this.setState(prevState => ({
                                         displaySocialInput: !prevState.displaySocialInput
                                     }))} 
