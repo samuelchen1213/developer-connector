@@ -3,7 +3,7 @@ Fullstack application (MERN Stack) - Social network app that allows developers a
 
 ## Tools, frameworks, and dependencies used
 
-### Backend 🤖 🧠
+### Backend
 - Node Js 
 - Express Js
 - Postman 
@@ -12,7 +12,7 @@ Fullstack application (MERN Stack) - Social network app that allows developers a
 - Validator Js
 - MongoDB
 
-### Frontend 🖥 💃🏻
+### Frontend
 - React Js
 - Redux
 - Bootstap 4
